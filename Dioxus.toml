@@ -3,16 +3,6 @@
 # App (Project) Name
 name = "rust-webassembly"
 
-# Dioxus App Default Platform
-# web, desktop, fullstack
-default_platform = "web"
-
-# `build` & `serve` dist path
-out_dir = "dist"
-
-# resource (assets) file folder
-asset_dir = "assets"
-
 [web.app]
 
 # HTML title tag content
@@ -29,11 +19,10 @@ watch_path = ["src", "assets"]
 # include `assets` in web platform
 [web.resource]
 
-# CSS style file
+# Additional CSS style files
 style = ["/tailwind.css"]
 
-
-# Javascript code file
+# Additional JavaScript files
 script = []
 
 [web.resource.dev]

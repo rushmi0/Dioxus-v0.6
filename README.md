@@ -1,32 +1,31 @@
-# Dioxus v0.5 + Tailwindcss + daisyui
+# Dioxus v0.6 + Tailwindcss + daisyui
 
+Your new bare-bones project includes minimal organization with a single `main.rs` file and a few assets.
+
+### Tailwind
 1. Install npm: https://docs.npmjs.com/downloading-and-installing-node-js-and-npm
-
-2. Install Dioxus CLI:
-
-```bash
-cargo install dioxus-cli
-```
-
-3. Install daisyUI, a plugin for Tailwind CSS:
+2. Install the Tailwind CSS CLI: https://tailwindcss.com/docs/installation
+3. Run the following command in the root of the project to start the Tailwind CSS compiler:
 
 ```bash
 npm i -D daisyui@latest
 ```
 
-4. Run the following command in the root of the project to start the tailwind CSS compiler:
-
 ```bash
-npx tailwindcss -i ./input.css -o ./public/tailwind.css --watch
+npx tailwindcss -i ./input.css -o ./public/tailwind.css
 ```
 
-5. Run the following command in the root of the project to start the Dioxus dev server:
+### Serving Your App
+
+Run the following command in the root of your project to start developing with the default platform:
 
 ```bash
 npm run web
 ```
 
-- Open the browser to http://localhost:8080
-- Configure Project: https://dioxuslabs.com/learn/0.5/CLI/configure
-- Tailwind css: https://tailwindcss.com/docs/installation
-- Daisy ui: https://daisyui.com/docs/install
+### Check Output Size
+
+To check the size of the generated output, use the following command:
+```bash
+du -sh target/dx/rust-webassembly/release/web/public
+```

@@ -1,3 +1,3 @@
-pub mod banner;
+pub mod navigation_bar;
 
-pub use banner::Banner;
+pub use navigation_bar::NavigationBar;

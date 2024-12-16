@@ -1,16 +1,29 @@
 [package]
 name = "rust-webassembly"
 version = "0.1.0"
-description = "อ่านหาพ่องงง"
-authors = ["rushmi0"]
+authors = ["lnwza007 ⚡️ <gcalku@gmail.com>"]
 edition = "2021"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
+dioxus = { version = "0.6.0", features = ["router"] }
+dioxus-logger = "0.6.0"
 
-dioxus = { version = "0.5", features = ["web"] }
+[features]
+default = ["web"]
+web = ["dioxus/web"]
+desktop = ["dioxus/desktop"]
+mobile = ["dioxus/mobile"]
 
-# Debug
-dioxus-logger = "0.5.1"
-manganis = "0.2.2"
+[profile]
+
+[profile.wasm-dev]
+inherits = "dev"
+opt-level = 1
+
+[profile.server-dev]
+inherits = "dev"
+
+[profile.android-dev]
+inherits = "dev"

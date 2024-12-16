@@ -1,1 +1,1 @@
-pub mod banner_style;
+pub mod navigation_bar_style;
