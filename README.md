@@ -30,12 +30,12 @@ run the development server for a different platform, specify the platform explic
 ```
 
 ## Build and Clean
-1. **Build the project** Build the project for production using the release flag:
+1. Build the project for production:
 ```bash
    dx bundle --platform web
 ```
 
-2. **Clean the project** Remove all build artifacts:
+2. **Clean the project** Remove all `target` dir:
 ```bash
    dx clean
 ```
