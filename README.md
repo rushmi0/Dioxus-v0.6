@@ -1,31 +1,51 @@
-# Dioxus v0.6 + Tailwindcss + daisyui
+# Dioxus v0.6 + Tailwindcss
 
-Your new bare-bones project includes minimal organization with a single `main.rs` file and a few assets.
+Easily development cross-platform app with this Dioxus custom template.
 
-### Tailwind
-1. Install npm: https://docs.npmjs.com/downloading-and-installing-node-js-and-npm
-2. Install the Tailwind CSS CLI: https://tailwindcss.com/docs/installation
-3. Run the following command in the root of the project to start the Tailwind CSS compiler:
+___
 
+## Development Setup
+1. TailwindCSS Integration
 ```bash
-npm i -D daisyui@latest
+   npx tailwindcss -i ./input.css -o ./public/tailwind.css
 ```
 
-```bash
-npx tailwindcss -i ./input.css -o ./public/tailwind.css
-```
+2. **Install the Dioxus CLI**
 
-### Serving Your App
-
-Run the following command in the root of your project to start developing with the default platform:
+To get started with Dioxus, install the CLI using the following command:
 
 ```bash
-npm run web
+   cargo install dioxus-cli
 ```
 
-### Check Output Size
-
-To check the size of the generated output, use the following command:
+Start the Dioxus development server with live reloading \
+by default, the Dioxus development server runs for the web platform
 ```bash
-du -sh target/dx/rust-webassembly/release/web/public
+   dx serve
 ```
+
+run the development server for a different platform, specify the platform explicitly:
+```bash
+   dx serve --platform desktop
+```
+
+## Build and Clean
+1. **Build the project** Build the project for production using the release flag:
+```bash
+   dx bundle --platform web
+```
+
+2. **Clean the project** Remove all build artifacts:
+```bash
+   dx clean
+```
+
+
+## Resources Dependencies
+
+Before starting, ensure you have the following installed on your system:
+
+- Dioxus: [https://dioxuslabs.com](https://dioxuslabs.com)
+- Rust: [https://www.rust-lang.org](https://www.rust-lang.org)
+- TailwindCSS: [https://tailwindcss.com](https://tailwindcss.com)
+- Tauri: [https://tauri.app/start/prerequisites](https://tauri.app/start/prerequisites/#linux)

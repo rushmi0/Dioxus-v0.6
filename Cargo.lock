@@ -3,6 +3,14 @@
 version = 4
 
 [[package]]
+name = "Dioxus"
+version = "0.1.0"
+dependencies = [
+ "dioxus",
+ "dioxus-logger",
+]
+
+[[package]]
 name = "addr2line"
 version = "0.24.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -3412,14 +3420,6 @@ dependencies = [
  "wasm-bindgen-futures",
  "web-sys",
  "windows-sys 0.48.0",
-]
-
-[[package]]
-name = "rust-webassembly"
-version = "0.1.0"
-dependencies = [
- "dioxus",
- "dioxus-logger",
 ]
 
 [[package]]

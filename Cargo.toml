@@ -1,5 +1,5 @@
 [package]
-name = "rust-webassembly"
+name = "Dioxus"
 version = "0.1.0"
 authors = ["lnwza007 ⚡️<lnwza007@rushmi0.win>"]
 edition = "2021"
@@ -15,8 +15,6 @@ default = ["web"]
 web = ["dioxus/web"]
 desktop = ["dioxus/desktop"]
 mobile = ["dioxus/mobile"]
-
-[profile]
 
 [profile.wasm-dev]
 inherits = "dev"

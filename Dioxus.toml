@@ -1,12 +1,12 @@
 [application]
 
 # App (Project) Name
-name = "rust-webassembly"
+name = "Dioxus"
 
 [web.app]
 
 # HTML title tag content
-title = "rust-webassembly"
+title = "Dioxus v0.6"
 
 [web.watcher]
 
@@ -20,7 +20,7 @@ watch_path = ["src", "assets"]
 [web.resource]
 
 # Additional CSS style files
-style = ["/tailwind.css"]
+style = ["public/tailwind.css"]
 
 # Additional JavaScript files
 script = []
