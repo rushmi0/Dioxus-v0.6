@@ -47,5 +47,6 @@ Before starting, ensure you have the following installed on your system:
 
 - Dioxus: [https://dioxuslabs.com](https://dioxuslabs.com)
 - Rust: [https://www.rust-lang.org](https://www.rust-lang.org)
+- Nodejs: [https://nodejs.org/en/download](https://nodejs.org/en/download)
 - TailwindCSS: [https://tailwindcss.com](https://tailwindcss.com)
 - Tauri: [https://tauri.app/start/prerequisites](https://tauri.app/start/prerequisites/#linux)
