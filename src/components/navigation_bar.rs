@@ -30,7 +30,7 @@ pub fn NavigationBar() -> Element {
                         h2 { class: "topic text-[#2D323B] lg:text-[96px] font-bold text-[48px] sm:text-[48px]", " Cross Platform" }
 
                         p { class: "des mt-10 lg:text-[24px] text-[21px] sm:text-[21px] text-balance leading-normal",
-                            "Dioxus is a Rust library for building cross-platform app that run on desktop, web, mobile and more."
+                            "Dioxus is a framework for building cross-platform apps that run on desktop, web, mobile and more."
                         }
 
                         // Buttons to open links in a new tab
