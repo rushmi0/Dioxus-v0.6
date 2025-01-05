@@ -24,13 +24,13 @@ pub fn NavigationBar() -> Element {
 
                         h1 { class: "title text-[48px] sm:text-[48px] lg:text-[96px] font-bold",
                             span { class: "text-[#00A8D6]", "Dioxus" }
-                            span { class: "text-[#E96020] ml-2", " v0.5" }
+                            span { class: "text-[#E96020] ml-2", " v0.6" }
                         }
 
-                        h2 { class: "topic text-[#2D323B] lg:text-[96px] font-bold text-[48px] sm:text-[48px]", "Webassembly" }
+                        h2 { class: "topic text-[#2D323B] lg:text-[96px] font-bold text-[48px] sm:text-[48px]", " Cross Platform" }
 
                         p { class: "des mt-10 lg:text-[24px] text-[21px] sm:text-[21px] text-balance leading-normal",
-                            "Dioxus is a Rust library for building apps that run on desktop, web, mobile, and more."
+                            "Dioxus is a Rust library for building cross-platform app that run on desktop, web, mobile and more."
                         }
 
                         // Buttons to open links in a new tab
@@ -38,7 +38,7 @@ pub fn NavigationBar() -> Element {
 
                             div { class: "mr-4",
                                 a {
-                                    href: "https://dioxuslabs.com/learn/0.5/reference",
+                                    href: "https://dioxuslabs.com/learn/0.6/getting_started/",
                                     target: "_blank",
                                     class: "hover:-translate-y-2 w-[150px] h-[50px] bg-[#00A8D6] text-white rounded-md flex items-center justify-center",
                                     "Read the docs"
