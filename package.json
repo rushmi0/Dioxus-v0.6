@@ -1,0 +1,16 @@
+{
+  "name": "dioxus-v0.6",
+  "version": "1.0.0",
+  "description": "Easily development cross-platform app with this Dioxus custom template.",
+  "main": "\"\"",
+  "scripts": {
+    "build": "npx tailwindcss -i src/main.css -o assets/main.css"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@tailwindcss/cli": "^4.0.2",
+    "daisyui": "^5.0.0-beta.6",
+    "tailwindcss": "^4.0.2"
+  }
+}
