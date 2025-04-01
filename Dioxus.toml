@@ -20,7 +20,7 @@ watch_path = ["src", "assets"]
 [web.resource]
 
 # Additional CSS style files
-style = ["public/tailwind.css"]
+#style = ["public/tailwind.css"]
 
 # Additional JavaScript files
 script = []
